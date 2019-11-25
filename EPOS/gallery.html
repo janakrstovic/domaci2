@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Galerija</title>
+    <link rel="stylesheet" type="text/css" href="css/text.css">
+</head>
+<header>
+    <nav class="meni">
+        <a href="#" style="color: #e67300; font-size: 3em; font-family: Georgia, 'Times New Roman', Times, serif; padding-left: 1%;"><i>Smederevska jesen</i></a>
+        <ul>
+            <li><a href="index.html" class="dugme2">Početna</a></li>
+            <li><a href="gallery.html" class="dugme2">Galerija</a></li>
+            <li><a href="about.html" class="dugme2">O nama</a></li>
+            <li><a href="contact.html" class="dugme2">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<body>
+    <div id="naslovgalerija">
+        <h1>Galerija</h1>
+        <hr class="light">
+    </div>
+
+
+    <div id="slikeFlex">
+
+        <img class="slikaSrc" src="img/devojke.jpg">
+
+        <img class="slikaSrc" src="img/momci.jpg">
+
+        <img class="slikaSrc" src="img/deca.jpg">
+
+        <img class="slikaSrc" src="img/voce.jpg">
+
+        <img class="slikaSrc" src="img/koncert.jpg">
+
+        <img class="slikaSrc" src="img/seone.jpg">
+
+        <img class="slikaSrc" src="img/kraljica.jpg">
+
+        <img class="slikaSrc" src="img/pevaci.jpg">
+
+    </div>
+
+
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="slikaSrc" id="slike">
+    </div>
+
+
+    <script>
+        var modal = document.getElementById("myModal");
+
+        var img = document.getElementById("slikeFlex");
+        var modalImg = document.getElementById("slike");
+        img.onclick = function() {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+        }
+
+
+        var span = document.getElementsByClassName("modal")[0];
+
+
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+    </script>
+
+</body>
+
+<footer>
+    <div id="roditelj">
+        <div class="futer">
+            <h5>Društvene mreže</h5>
+            <hr class="light">
+            <br>
+            <div class="proba">
+                <div class="mreze">
+                    <a href="https://www.facebook.com/permalink.php?story_fbid=3253031964708748&id=475768805768425&__tn__=-R" target="_blank"><img src="img/facebook.png"></a>
+                </div>
+                <div class="mreze">
+                    <a href="https://instagram.com/smederevska_jesen?igshid=56axbwlke76y" target="_blank"><img src="img/instagram.png"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="futer">
+            <h5>Kontakt</h5>
+            <hr class="light">
+            <br>
+            <p>Jana Krstović</p>
+            <p>Elena Dubić</p>
+            <p>Ana Jandrić</p>
+            <p>026/186-478</p>
+        </div>
+    </div>
+</footer>
+
+</html>

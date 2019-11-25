@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/funkcije.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/text.css">
+    <title>Kontakt</title>
+</head>
+<header>
+    <nav class="meni">
+        <a href="#" style="color: #e67300; font-size: 3em; font-family: Georgia, 'Times New Roman', Times, serif; padding-left: 1%;"><i>Smederevska jesen</i></a>
+        <ul>
+            <li><a href="index.html" class="dugme2">Početna</a></li>
+            <li><a href="gallery.html" class="dugme2">Galerija</a></li>
+            <li><a href="about.html" class="dugme2">O nama</a></li>
+            <li><a href="contact.html" class="dugme2">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<body>
+    <div id="kontakt">
+        <h2>Kontaktirajte nas</h2>
+        <div class="poruka">
+            <form name="mojaForma" method="GET" action="" onsubmit="return validateForm()">
+                <label>Ime:</label><br>
+                <input type="text" name="ime" placeholder="Unesite ime...">
+                <br>
+                <label>Prezime:</label><br>
+                <input type="text" name="prezime" placeholder="Unesite prezime...">
+                <br>
+                <label>E-mail:</label><br>
+                <input type="text" name="mail" placeholder="Unesite email...">
+                <br>
+                <label>Godine:</label><br>
+                <select name="godine">
+                        <option value="0" selected></option>
+                        <option value="1">0-18</option>
+                        <option value="2">19-25</option>
+                        <option value="3">26-40</option>
+                        <option value="4">40+</option>
+                      </select>
+                <br>
+                <label>Pol:</label>
+                <br>
+                <div class="radio">
+                    <div class="input-forme">
+                        <input type="radio" name="pol" value="muski" id="r1" class="tacka">
+                        <label for="r1" class="naziv">Muški</label>
+                        <br>
+                    </div>
+                    <div class="input-forme">
+                        <input type="radio" name="pol" value="zenski" id="r2" class="tacka">
+                        <label for="r2">Ženski</label>
+                        <br>
+                    </div>
+                    <div class="input-forme">
+                        <input type="radio" name="pol" value="ostalo" id="r3" class="tacka">
+                        <label for="r3">Ostalo</label>
+                        <br>
+                    </div>
+                </div>
+                <br>
+                <label>Vaša poruka:</label>
+                <br>
+                <input type="text" name="poruka" placeholder="Unesite poruku...">
+                <br>
+                <button onclick="">Pošalji poruku</button>
+
+            </form>
+        </div>
+    </div>
+
+    <div id="lokacija">
+        <button onclick="gdeSam()">Moja lokacija</button>
+    </div>
+
+</body>
+
+<footer>
+    <div id="roditelj">
+        <div class="futer">
+            <h5>Društvene mreže</h5>
+            <hr class="light">
+            <br>
+            <div class="proba">
+                <div class="mreze">
+                    <a href="https://www.facebook.com/permalink.php?story_fbid=3253031964708748&id=475768805768425&__tn__=-R" target="_blank"><img src="img/facebook.png"></a>
+                </div>
+                <div class="mreze">
+                    <a href="https://instagram.com/smederevska_jesen?igshid=56axbwlke76y" target="_blank"><img src="img/instagram.png"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="futer">
+            <h5>Kontakt</h5>
+            <hr class="light">
+            <br>
+            <p>Jana Krstović</p>
+            <p>Elena Dubić</p>
+            <p>Ana Jandrić</p>
+            <p>026/186-478</p>
+        </div>
+    </div>
+</footer>
+
+</html>
